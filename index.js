@@ -1,7 +1,14 @@
 var http = require('http');
 
-var server = http.createServer(function(request, response) {
+function fibonacci(n) {
+   return n < 1 ? 0
+        : n <= 2 ? 1
+        : fibonacci(n - 1) + fibonacci(n - 2);
+}
 
+
+var server = http.createServer(function(request, response) {
+    console.log(fibonacci(50));
     response.writeHead(200, {"Content-Type": "text/plain"});
     response.end("Hello world in staging 2! yes!");
 

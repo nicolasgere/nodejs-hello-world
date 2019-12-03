@@ -10,7 +10,7 @@ function fibonacci(n) {
 var server = http.createServer(function(request, response) {
     console.log(fibonacci(40));
     response.writeHead(200, {"Content-Type": "text/plain"});
-    response.end("Hello world in staging 2! yes!");
+    response.end("Hello world in staging 2! yes!" + "thib");
 
 });
 

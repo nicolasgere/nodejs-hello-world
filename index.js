@@ -10,7 +10,6 @@ function fibonacci(n) {
 var server = http.createServer(function(request, response) {
     console.log(process.env)
     fibonacci(5)
-   
     response.writeHead(200, {"Content-Type": "text/plain"});
     response.end("Hello world in production, yes! " + process.env.TEST + "thib");  
 });

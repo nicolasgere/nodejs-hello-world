@@ -8,7 +8,7 @@ function fibonacci(n) {
 
 
 var server = http.createServer(function(request, response) {
-    console.log(fibonacci(5));
+    console.log(fibonacci(8));
     response.writeHead(200, {"Content-Type": "text/plain"});
     response.end("Hello world in staging! yes!" + "thib");
 

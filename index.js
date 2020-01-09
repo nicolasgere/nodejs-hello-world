@@ -6,9 +6,6 @@ function fibonacci(n) {
         : fibonacci(n - 1) + fibonacci(n - 2);
 }
 
-
-
-
 var server = http.createServer(function(request, response) {
     fibonacci(30)
     console.log(process.env.TEST)
